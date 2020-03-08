@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'Avanti';
+  src: url('../fonts/Avanti.eot');
+  src: local('Days'),
+  url('../fonts/Avanti.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Avanti.woff') format('woff'),
+  url('../fonts/Avanti.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avanti';
+  src: url('../fonts/Avanti-bold.eot');
+  src: local('Days'),
+  url('../fonts/Avanti-bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Avanti-bold.woff') format('woff'),
+  url('../fonts/Avanti-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+//Avanti bold
+//Monitorica
+//Myriad Pro Cond
+
+@font-face {
+  font-family: 'pt_sans_rub';
+  src: url('../fonts/PTSansRub/ptsansrub-bold-webfont.eot');
+  src: url('../fonts/PTSansRub/ptsansrub-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PTSansRub/ptsansrub-bold-webfont.woff2') format('woff2'),
+  url('../fonts/PTSansRub/ptsansrub-bold-webfont.woff') format('woff'),
+  url('../fonts/PTSansRub/ptsansrub-bold-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'pt_sans_rub';
+  src: url('../fonts/PTSansRub/ptsansrub-bolditalic-webfont.eot');
+  src: url('../fonts/PTSansRub/ptsansrub-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PTSansRub/ptsansrub-bolditalic-webfont.woff2') format('woff2'),
+  url('../fonts/PTSansRub/ptsansrub-bolditalic-webfont.woff') format('woff'),
+  url('../fonts/PTSansRub/ptsansrub-bolditalic-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'pt_sans_rub';
+  src: url('../fonts/PTSansRub/ptsansrub-italic-webfont.eot');
+  src: url('../fonts/PTSansRub/ptsansrub-italic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PTSansRub/ptsansrub-italic-webfont.woff2') format('woff2'),
+  url('../fonts/PTSansRub/ptsansrub-italic-webfont.woff') format('woff'),
+  url('../fonts/PTSansRub/ptsansrub-italic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'pt_sans_rub';
+  src: url('../fonts/PTSansRub/ptsansrub-regular-webfont.eot');
+  src: url('../fonts/PTSansRub/ptsansrub-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PTSansRub/ptsansrub-regular-webfont.woff2') format('woff2'),
+  url('../fonts/PTSansRub/ptsansrub-regular-webfont.woff') format('woff'),
+  url('../fonts/PTSansRub/ptsansrub-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monitorica';
+  src: url('../fonts/Monitorica.eot');
+  src: url('../fonts/Monitorica.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Monitorica.woff2') format('woff2'),
+  url('../fonts/Monitorica.woff') format('woff'),
+  url('../fonts/Monitorica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Cond';
+  src: url('../fonts/Myriad Pro Cond.eot');
+  src: url('../fonts/Myriad Pro Cond.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Myriad Pro Cond.woff2') format('woff2'),
+  url('../fonts/Myriad Pro Cond.woff') format('woff'),
+  url('../fonts/Myriad Pro Cond.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/MyriadPro/MyriadPro-Regular.eot');
+  src: url('../fonts/MyriadPro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MyriadPro/MyriadPro-Regular.woff2') format('woff2'),
+  url('../fonts/MyriadPro/MyriadPro-Regular.woff') format('woff'),
+  url('../fonts/MyriadPro/MyriadPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/MyriadPro/MyriadPro-Bold.eot');
+  src: url('../fonts/MyriadPro/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MyriadPro/MyriadPro-Bold.woff2') format('woff2'),
+  url('../fonts/MyriadPro/MyriadPro-Bold.woff') format('woff'),
+  url('../fonts/MyriadPro/MyriadPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
