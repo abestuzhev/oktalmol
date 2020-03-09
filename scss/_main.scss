@@ -14,7 +14,7 @@
 }
 
 .header {
-    padding: 20px 0;
+    padding: 2rem 0;
     //height: 96px;
     display: flex;
     flex-flow: row nowrap;
@@ -29,7 +29,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    width: 141px;
+    width: 14.1rem;
     background-color: #6b2349;
     z-index: 90;
 }
@@ -43,7 +43,7 @@
 }
 
 .section {
-    padding: 160px 0 40px;
+    padding: 16rem 0 4rem;
     width: 100%;
     -webkit-background-size: cover;
     background-size: cover;
@@ -132,6 +132,104 @@
 }
 
 
+/*----------------------------*/
+
+#fp-nav {
+    padding-top: 15%;
+    width: 14.1rem;
+    height: 84%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: stretch;
+    right: 0 !important;
+    margin-top: 0 !important;
+    transform: translateY(-50%);
+    ul {
+        height: 100%;
+
+        li {
+            height: 15%;
+            //height: 144px;
+            position: relative;
+            cursor: pointer;
+
+            .fp-sr-only {
+                display: block;
+                text-align: center;
+                font-size: 2rem;
+                color: #49092b;
+                width: 5rem;
+                height: 5rem;
+                line-height: 5rem;
+                font-family: 'Myriad Pro Cond', sans-serif;
+                position: absolute;
+                z-index: 10;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                transition: all .2s ease;
+            }
+
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                &.active {
+                    position: relative;
+                    .fp-sr-only {
+                        color: #000;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            z-index: -1;
+                            width: 5rem;
+                            height: 5rem;
+                            background-color: #fff;
+                            border-radius: 10rem;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            transition: all .2s ease;
+                            background-image: -moz-linear-gradient( 90deg, rgb(254,254,254) 0%, rgb(251,251,251) 100%);
+                            background-image: -webkit-linear-gradient( 90deg, rgb(254,254,254) 0%, rgb(251,251,251) 100%);
+                            background-image: -ms-linear-gradient( 90deg, rgb(254,254,254) 0%, rgb(251,251,251) 100%);
+                            box-shadow: 0px 5px 14.22px 3.78px rgba(0, 0, 0, 0.3);
+
+                        }
+                    }
+
+                    &::after {
+                        content: '';
+                        height: 100%;
+                        width: .2rem;
+                        background-color: #fff;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+                span {
+                    background-color: transparent;
+                }
+            }
+
+            &:hover {
+                .fp-sr-only {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+
+
+    .fp-tooltip {
+        display: none !important;
+    }
+}
+
+
 /*about-----------------------*/
 .main-page {
     width: 70%;
@@ -140,31 +238,31 @@
 
     .c-title {
         color: #ffffff;
-        font-size: 60px;
+        font-size: 6rem;
     }
 
     &__subtitle {
-        font-size: 25px;
+        font-size: 2.5rem;
         text-transform: uppercase;
         color: #ffffff;
         font-family: 'Myriad Pro', sans-serif;
-        margin-bottom: 40px;
+        margin-bottom: 4rem;
     }
 
     .c-btn {
-        max-width: 250px;
-        padding: 20px 80px;
-        font-size: 25px;
+        max-width: 25rem;
+        padding: 2rem 8rem;
+        font-size: 2.5rem;
     }
 
     &__scroll {
         position: absolute;
-        bottom: 30px;
+        bottom: 3rem;
         left: 0;
         font-family: 'Myriad Pro', sans-serif;
-        font-size: 16px;
+        font-size: 1.6rem;
         color: #ffffff;
-        letter-spacing: 3px;
+        letter-spacing: .3rem;
         text-transform: uppercase;
         display: flex;
         flex-flow: row nowrap;
@@ -173,7 +271,7 @@
         text-decoration: none;
 
         svg {
-            margin-right: 15px;
+            margin-right: 1.5rem;
         }
     }
 }
@@ -182,10 +280,10 @@
 /*about-----------------------*/
 .about {
     &-subtitle {
-        font-size: 22px;
+        font-size: 2.2rem;
         color: #ffffff;
         font-family: 'Myriad Pro Cond', sans-serif;
-        margin-bottom: 56px;
+        margin-bottom: 5.6rem;
     }
 
     &-list {
@@ -193,10 +291,10 @@
         flex-flow: row nowrap;
         justify-content: flex-start;
         align-items: stretch;
-        margin-bottom: 64px;
+        margin-bottom: 6.4rem;
 
         &__item {
-            margin-right: 20px;
+            margin-right: 2rem;
 
             &:last-child {
                 margin-right: 0;
@@ -209,25 +307,25 @@
         flex-flow: row nowrap;
         justify-content: flex-start;
         align-items: center;
-        padding: 21px 26px;
-        border: 2px solid #d6d5da;
-        border-radius: 150px;
+        padding: 2.1rem 2.6rem;
+        border: .2rem solid #d6d5da;
+        border-radius: 15rem;
 
         &__icon {
-            margin-right: 16px;
+            margin-right: 1.6rem;
         }
 
         &__text {
             color: #ffffff;
             font-family: 'Avanti', sans-serif;
-            font-size: 18px;
+            font-size: 1.8rem;
             line-height: 1.1;
         }
     }
 
     &-note {
-        padding: 11px 11px 11px 0;
-        font-size: 18px;
+        padding: 1.1rem 1.1rem 1.1rem 0;
+        font-size: 1.8rem;
         color: #ffffff;
         line-height: 1;
         font-family: 'Avanti', sans-serif;
@@ -239,7 +337,7 @@
             content: '';
             position: absolute;
             top: 0;
-            left: -2000px;
+            left: -200rem;
             right: 0;
             z-index: -1;
             height: 100%;
@@ -253,21 +351,21 @@
 .testimony {
 
     .c-title {
-        margin-bottom: 14px;
+        margin-bottom: 1.4rem;
     }
 
     &-subtitle {
-        font-size: 22px;
+        font-size: 2.2rem;
         color: #ffffff;
         font-family: 'Myriad Pro Cond', sans-serif;
-        margin-bottom: 56px;
+        margin-bottom: 5.6rem;
     }
 
     &-list {
-        margin-bottom: 40px;
+        margin-bottom: 4rem;
 
         &__item {
-            margin-bottom: 20px;
+            margin-bottom: 2rem;
         }
     }
 
@@ -279,17 +377,17 @@
 
         &__icon {
             display: inline-block;
-            padding: 5px 10px;
+            padding: .5rem 1rem;
             background-color: #74395b;
-            border-radius: 6px;
-            margin-right: 23px;
+            border-radius: .6rem;
+            margin-right: 2.3rem;
             color: #ffffff;
             font-weight: 700;
-            flex: 0 1 40px;
+            flex: 0 1 4rem;
         }
 
         &__text {
-            font-size: 25px;
+            font-size: 2.5rem;
             color: #ffffff;
             font-family: 'Myriad Pro', sans-serif;
             font-weight: 700;
@@ -298,7 +396,7 @@
 
             div {
                 text-transform: lowercase;
-                font-size: 22px;
+                font-size: 2.2rem;
                 font-family: 'Myriad Pro Cond', sans-serif;
                 font-weight: 400;
             }
@@ -308,7 +406,7 @@
     &-note {
         color: #ffffff;
         font-family: 'Myriad Pro Cond', sans-serif;
-        font-size: 20px;
+        font-size: 2.2rem;
     }
 }
 
@@ -318,9 +416,9 @@
     &-temp {
         display: inline-block;
         font-family: 'Avanti', sans-serif;
-        font-size: 30px;
-        margin-bottom: 44px;
-        padding: 20px 44px 20px 0;
+        font-size: 3rem;
+        margin-bottom: 4.4rem;
+        padding: 2rem 4.4rem 2rem 0;
         color: #ffffff;
         position: relative;
         z-index: 10;
@@ -329,7 +427,7 @@
             content: '';
             position: absolute;
             top: 0;
-            left: -2000px;
+            left: -200rem;
             right: 0;
             z-index: -1;
             height: 100%;
@@ -338,7 +436,7 @@
         }
 
         span {
-            font-size: 72px;
+            font-size: 7.2rem;
         }
     }
 
@@ -346,12 +444,12 @@
 
     &-advantages {
         &__title {
-            font-size: 45px;
+            font-size: 4.5rem;
             color: #ffffff;
             font-family: 'Avanti', sans-serif;
             font-weight: 700;
             line-height: 1;
-            margin-bottom: 22px;
+            margin-bottom: 2.2rem;
             text-transform: uppercase;
         }
 
@@ -364,7 +462,7 @@
 
         &__item {
             width: 33%;
-            margin-right: 14px;
+            margin-right: 1.4rem;
 
             &:last-child {
                 margin-right: 0;
@@ -372,23 +470,23 @@
         }
 
         &-card {
-            padding: 22px 30px;
+            padding: 2.2rem 3rem;
             background-color: rgba(255,255,255, .8);
             border-radius: 100px;
             font-family: 'Avanti', sans-serif;
             text-align: center;
 
             &__title {
-                font-size: 18px;
+                font-size: 1.8rem;
                 line-height: 1;
-                margin-bottom: 4px;
+                margin-bottom: .4rem;
                 text-transform: uppercase;
                 color: #6b2349;
                 font-weight: 700;
             }
 
             &__text {
-                font-size: 18px;
+                font-size: 1.8rem;
                 line-height: 1;
                 color: #373737;
             }
@@ -413,60 +511,60 @@
 .scheme {
 
     &-card {
-        padding: 24px 40px;
-        border-radius: 7px;
+        padding: 2.4rem 4rem;
+        border-radius: .7rem;
         background-color: rgba(255,255,255,.6);
-        margin-bottom: 16px;
+        margin-bottom: 1.6rem;
 
 
         &__title {
 
-            font-size: 25px;
+            font-size: 2.5rem;
             text-transform: uppercase;
             color: #98145a;
             font-family: 'Avanti', sans-serif;
             font-weight: 700;
-            margin-bottom: 10px;
+            margin-bottom: 1rem;
             line-height: 1;
 
         }
 
         &__subtitle {
-            font-size: 25px;
+            font-size: 2.5rem;
             color: #a9457f;
             font-family: 'Myriad Pro Cond', sans-serif;
             line-height:1;
-            margin-bottom: 12px;
+            margin-bottom: 1.2rem;
         }
 
         &__row {
             display: flex;
             flex-flow: row nowrap;
             justify-content: flex-start;
-            align-items: center;
+            align-items: flex-end;
         }
 
         &__drop {
-            font-size: 30px;
+            font-size: 3rem;
             color: #373737;
             vertical-align: bottom;
 
             svg {
                 position: relative;
-                top: 3px;
+                top: .3rem;
             }
         }
 
         &__num {
             color: #373737;
-            font-size: 55px;
+            font-size: 5.5rem;
         }
 
         &-icon {
             color: #373737;
             font-family: 'Avanti', sans-serif;
-            font-size: 30px;
-            padding: 0 9px;
+            font-size: 3rem;
+            padding: 0 .9rem;
         }
 
         &-time {
@@ -479,9 +577,9 @@
 
             &__num {
                 color: #373737;
-                font-size: 55px;
-                line-height: 44px;
-                margin-right: 12px;
+                font-size: 5.5rem;
+                line-height: 4.4rem;
+                margin-right: 1.2rem;
             }
 
             &__body  {
@@ -490,13 +588,13 @@
 
             &__score {
                 display: block;
-                font-size: 20px;
-                line-height: 18px;
+                font-size: 2rem;
+                line-height: 1.8rem;
             }
 
             &__month {
                 display: block;
-                font-size: 30px;
+                font-size: 3rem;
             }
         }
     }
@@ -507,12 +605,12 @@
 .buy {
     &-list {
         &__item {
-            margin-bottom: 34px;
+            margin-bottom: 3.4rem;
         }
     }
 
     &-card {
-        padding-left: 90px;
+        padding-left: 9rem;
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-start;
@@ -524,10 +622,10 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 70px;
-            height: 70px;
+            width: 7rem;
+            height: 7rem;
             border: 1px solid #fff;
-            border-radius: 100px;
+            border-radius: 10rem;
 
             svg {
                 position: absolute;
@@ -538,28 +636,28 @@
         }
 
         &__body {
-            margin-right: 20px;
+            margin-right: 2rem;
         }
 
         &__title {
             color: #373737;
-            font-size: 22px;
+            font-size: 2.2rem;
             text-transform: uppercase;
-            margin-bottom: 8px;
+            margin-bottom: .8rem;
             line-height: 1;
             font-weight: 700;
         }
 
         &__text {
             color: #5c5c5c;
-            font-size: 15px;
+            font-size: 1.5rem;
             font-family: 'Myriad Pro', sans-serif;
             line-height: 1;
         }
 
         &__price {
             color: #6b2349;
-            font-size: 40px;
+            font-size: 4rem;
             font-weight: 400;
             white-space: nowrap;
         }
@@ -591,13 +689,13 @@
     left: 0;
     width: 100%;
     background-color: #283d24;
-    padding: 20px 0;
+    padding: 2rem 1.6rem;
 }
 
 .footer-text {
     text-align: center;
     color: #ffffff;
-    font-size: 40px;
+    font-size: 4rem;
     font-family: 'Myriad Pro Cond', sans-serif;
 
     a {
