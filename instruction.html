@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Октальмол</title>
+    <meta name="author" content="Matthew Howell" />
+    <!--<link rel="stylesheet" href="./js/onepage-scroll/onepage-scroll.css">-->
+    <link rel="stylesheet" href="./js/fullPage.js-master/dist/fullpage.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="header-layout">
+        <div class="header">
+            <div class="header-logo">
+                <svg class="icon-logo"><use xlink:href="./img/main.svg#icon-logo"></use></svg>
+            </div>
+            <a href="#" class="c-btn header-instruction">
+                <svg class="icon-instruction"><use xlink:href="./img/main.svg#icon-instruction"></use></svg>
+                <span>Инструкция</span>
+            </a>
+        </div>
+    </div>
+
+
+    
+
+    <main class="main" >
+
+        <div class="c-layout">
+            <div class="instruction">
+                <div class="instruction-info"></div>
+                <div class="instruction-text">
+                    <h3 class="instruction-title">Фармакологические свойства.</h3>
+                    <p>
+                        <b><i>Фармакодинамика.</i></b> Аминобензойная кислота является индуктором интерферона, оказывает
+антиоксидантное, иммуномодулирующее, радиопротекторное действие, ускоряет регенерацию роговицы. Препарат не обладает
+тератогенным, мутагенным, эмбриотоксическим действием.  <b><i>Фармакокинетика.</i></b> При инстилляции в конъюнктивальный мешок аминобензойная
+кислота быстро всасывается и проявляет терапевтическое действие. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+</div>
+
+
+
+
+
+<!--scripts-->
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<!--<script src="js/onepage-scroll/jquery.onepage-scroll.js"></script>-->
+<script src="./js/fullPage.js-master/dist/fullpage.js"></script>
+<script src="js/svg4everybody.min.js"></script>
+<script>svg4everybody(); // run it now or whenever you are ready</script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['1', '2', '3', '4', '5', '6'],
+        navigation:true,
+        navigationTooltips: ['1', '2', '3', '4', '5', '6']
+//        showActiveTooltip: true
+    });
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
