@@ -732,6 +732,27 @@
     padding-top: 14rem;
     font-size: 1.8rem;
     margin-bottom: 4rem;
+    position: relative;
+    
+    &-page {
+        overflow: hidden;
+    }
+
+    &-elem-1 {
+        position: absolute;
+        top: 30%;
+        left: -22%;
+    }
+    &-elem-2 {
+        position: absolute;
+        top: 69%;
+        left: -30%;
+    }
+    &-elem-3 {
+        position: absolute;
+        top: 56%;
+        right: -24%;
+    }
 
     .c-title {
         font-size: 6.4rem;

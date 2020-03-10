@@ -1689,7 +1689,22 @@ input.c-input--success::placeholder {
 .instruction {
   padding-top: 14rem;
   font-size: 1.8rem;
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  position: relative; }
+  .instruction-page {
+    overflow: hidden; }
+  .instruction-elem-1 {
+    position: absolute;
+    top: 30%;
+    left: -22%; }
+  .instruction-elem-2 {
+    position: absolute;
+    top: 69%;
+    left: -30%; }
+  .instruction-elem-3 {
+    position: absolute;
+    top: 56%;
+    right: -24%; }
   .instruction .c-title {
     font-size: 6.4rem; }
   .instruction-info {
@@ -2039,7 +2054,13 @@ input.c-input--success::placeholder {
     top: 69%;
     left: -15%; }
   .instruction-text {
-    margin-bottom: 2rem; } }
+    margin-bottom: 2rem; }
+  .instruction-elem-1,
+  .instruction-elem-2 {
+    display: none; }
+  .instruction-elem-3 {
+    top: 3%;
+    right: -47%; } }
 
 @media (max-width: 640px) {
   .c-title {

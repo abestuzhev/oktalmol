@@ -515,6 +515,16 @@
     .instruction-text {
         margin-bottom: 2rem;
     }
+
+    .instruction-elem-1,
+    .instruction-elem-2 {
+        display: none;
+    }
+
+    .instruction-elem-3 {
+        top: 3%;
+        right: -47%;
+    }
 }
 
 @media (max-width: 640px) {
