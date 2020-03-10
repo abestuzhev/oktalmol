@@ -3,50 +3,46 @@ var documentWidth = (document.documentElement.clientWidth ); // ширина м�
 var documentHeight = (document.documentElement.clientHeight ); // ширина минус прокрутка
 
 
+
 $(window).on("load", function () {
     // $('.slider').fadeIn(3000);
 });
 
 $(function () {
+    var hamburger = "<div class='c-hamburger'><span></span><span></span><span></span></div>";
 
-    var main = $('.main');
+    $('#fp-nav').prepend(hamburger);
 
-
-    // main.onepage_scroll({
-    //     sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
-    //     easing: "ease-in-out",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
-    //                                      // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
-    //     animationTime: 500,             // AnimationTime let you define how long each section takes to animate
-    //     pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
-    //     updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
-    //     beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
-    //     afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
-    //     loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
-    //     keyboard: true,                  // You can activate the keyboard controls
-    //     responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
-    //     // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
-    //     // the browser's width is less than 600, the fallback will kick in.
-    //     direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
-    // });
-    //
-    // $('.main-page__scroll').on('click', function(){
-    //     main.moveDown();
-    // });
+    var elem = $('.main'),
+        pos = elem.offset(),
+        elem_left = pos.left,
+        elem_top = pos.top,
+        elem_width = elem.width(),
+        elem_height = elem.height(),
+        x_center,
+        y_center;
 
 
+    $('.main').mousemove(function(e){
 
+        x_center = ( elem_width / 2 ) - ( e.pageX - elem_left );
+        y_center = ( elem_height / 2 ) - ( e.pageY - elem_top );
 
-    // var changeWindow = function(){
-    //     $('.section').css({
-    //         'height': documentHeight
-    //     });
-    // };
-    // changeWindow();
-    //
-    //
-    // $(window).resize(function(){
-    //     changeWindow();
-    // });
+        $('.parallax').each(function(){
+
+            var speed = $(this).attr('data-speed'),
+                xPos = Math.round(-1*x_center/20*speed),
+                yPos = Math.round(y_center/20*speed);
+
+            if (yPos < 0)
+                yPos = -2*speed;
+
+            $(this).css('transform', 'translate3d('+xPos+'px, '+yPos+'px, 0px)');
+
+        });
+
+    });
+
 
 
     //кнопка вверх
@@ -163,3 +159,5 @@ $(function () {
     });
 
 });
+
+

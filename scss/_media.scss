@@ -5,9 +5,33 @@
             right: 2%;
         }
     }
+
+    .section-1 .section-elem-2 {
+        right: 7%;
+    }
+
+    .section-1 .section-elem-3 {
+        top: 43%;
+        right: 3%;
+    }
+
+    .section-1 .section-elem-1 {
+        top: 72%;
+        left: 13%;
+    }
+
+    .section-3 .section-elem-1 {
+        top: 85%;
+    }
+
+    .section-3 .section-elem-2 {
+        left: -5%;
+    }
+
 }
 @media (max-width: 1450px){
-    .sidebar {
+    .sidebar,
+    .c-hamburger {
         display: none;
     }
 
@@ -75,6 +99,35 @@
     #fp-nav ul li {
         height: auto;
         margin-bottom: 1.5rem
+    }
+}
+
+
+@media (max-width: 1300px){
+    .section-1 .section-elem-2 {
+        right: 0%;
+    }
+
+    .section-1 .section-elem-3 {
+        top: 45%;
+        right: -9%;
+    }
+
+    .section-3 .section-elem-2 {
+        display: none;
+    }
+
+    .section-4 .section-elem-1 {
+        top: 58%;
+        right: -68%;
+    }
+
+    .instruction .c-title {
+        font-size: 3.4rem;
+    }
+
+    .instruction {
+        padding-top: 9rem;
     }
 }
 
@@ -146,6 +199,12 @@
 @media (max-width: 1150px){
     .c-layout {
         padding: 0 9rem 0 3.2rem;
+    }
+
+
+
+    .instruction-page .c-layout {
+        padding: 0 3.2rem 0 3.2rem;
     }
 
     .header {
@@ -248,6 +307,27 @@
     .main-page {
         width: 100%;
     }
+
+    .instruction-info-elem__2 {
+        display: none;
+    }
+
+    .instruction-info-elem__1 {
+        top:0;
+        left: 0;
+    }
+
+    .instruction-info-elem {
+        width: 88px;
+        overflow: hidden;
+        right: 0;
+        top: auto;
+        bottom: 2%;
+    }
+
+    .instruction-info-list {
+        padding-right: 4rem;
+    }
 }
 
 @media (max-width: 1024px) and (max-height: 1366px){
@@ -308,21 +388,26 @@
     }
 
     .buy-card__text {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        line-height: 1.2;
     }
 }
 
 
-@media (max-width: 768px) and (max-height: 1024px){
+@media (max-width: 769px) and (max-height: 1025px){
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1024px) and (max-height: 768px){
     html {
         font-size: 10px;
     }
 }
 
 @media (max-width: 730px) {
-    html {
-        font-size: 6px;
-    }
+
 
     .section-3 .c-layout-col:nth-child(1),
     .section-2 .c-layout-col:nth-child(2),
@@ -376,11 +461,66 @@
     .buy-card__price {
         font-size: 3rem;
     }
+
+    .storage-temp span {
+        font-size: 4.6rem;
+    }
+
+    .storage-advantages-card {
+        position: relative;
+        padding: 0 0 0 5rem;
+        background-color: transparent;
+        text-align: left;
+
+        &::after {
+            content: '→';
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            padding: .5rem 1rem;
+            background-color: #74395b;
+            border-radius: .6rem;
+            margin-right: 2.3rem;
+            color: #ffffff;
+            font-weight: 700;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 1 4rem;
+            flex: 0 1 4rem;
+            font-size: 2rem;
+        }
+    }
+
+    .section-1 .section-elem-1 {
+        display: none;
+    }
+
+    .section-1 .section-elem-2 {
+        width: 10.6rem;
+    }
+
+    .section-1 .section-elem-3 {
+        width: 18.2rem;
+    }
+
+    .section-5 .section-elem-1 {
+        top: 89%;
+    }
+
+    .section-5 .section-elem-2 {
+        top: 69%;
+        left: -15%;
+    }
+
+    .instruction-text {
+        margin-bottom: 2rem;
+    }
 }
 
 @media (max-width: 640px) {
     .c-title {
-        font-size: 4rem;
+        font-size: 4.1rem;
+        line-height: 1.25;
     }
 
     .main-page .c-title {
@@ -403,5 +543,87 @@
 
     .scheme-card__drop svg {
         top: .6rem;
+    }
+
+    .storage {
+        padding-left: 6rem;
+    }
+
+    .storage-advantages-card__title,
+    .storage-advantages-card__text {
+        //font-size: 2.6rem;
+    }
+
+    html {
+        font-size: 8px;
+    }
+
+    .instruction-info-elem {
+
+        right: 0;
+        top: 10%;
+        bottom: auto;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .scheme-card__num,
+    .scheme-card-time__num {
+        font-size: 3.6rem;
+    }
+
+    .section-1 {
+        background-position: 61% 50%;
+    }
+
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 7px;
+    }
+
+    .storage-advantages-card__title,
+    .storage-advantages-card__text {
+        font-size: 2.6rem;
+    }
+
+    .section-5 {
+        padding-top: 15rem;
+    }
+
+    .instruction {
+        font-size: 2.7rem;
+    }
+
+}
+
+
+@media (max-width: 380px) {
+
+    .about-subtitle,
+    .testimony-subtitle {
+        font-size: 3.6rem;
+        line-height: 1.3;
+        margin-bottom: 3.6rem;
+    }
+
+    .section-3 {
+        padding-top: 14rem;
+    }
+
+    .testimony-note {
+        font-size: 2.7rem;
+    }
+    .testimony-card__text {
+        font-size: 2.7rem;
+    }
+}
+
+
+@media (max-width: 340px) {
+    html {
+        font-size: 6px;
     }
 }

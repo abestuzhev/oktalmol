@@ -23,6 +23,7 @@ body *, html * {
 }
 
 body {
+    font-size: 1.5rem;
     //min-width: 320px;
     font-family: 'Avanti', sans-serif;
 }
@@ -34,6 +35,40 @@ body {
     min-height: 100%;
 }
 
+.c-hamburger {
+
+    height: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+
+    span {
+        display: block;
+        height: .3rem;
+        width: 1.8rem;
+        border-radius: 5rem;
+        background-color: #000;
+        margin: 0 auto .3rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(1) {
+
+        }
+
+        &:nth-child(2) {
+
+        }
+
+        &:nth-child(3) {
+
+        }
+    }
+}
+
 .c-layout {
     max-width: 1100px;
     margin: 0 auto;
@@ -42,6 +77,8 @@ body {
     justify-content: space-between;
     align-items: stretch;
     height: 100%;
+    z-index: 11;
+    position: relative;
 
     &-col {
         width: 50%;

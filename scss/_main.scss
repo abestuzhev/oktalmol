@@ -51,22 +51,33 @@
     box-sizing: border-box;
     position: relative;
 
+    &-elem-1,
+    &-elem-2,
+    &-elem-3 {
+        img {
+            width: 100%;
+        }
+    }
+
     &-1 {
         .section-elem-1 {
             position: absolute;
             top: 55%;
             left: 0%;
             z-index: 10;
+            width: 30.6rem;
         }
         .section-elem-2 {
             position: absolute;
             top: 14%;
             right: 14%;
+            width: 13.6rem;
         }
         .section-elem-3 {
             position: absolute;
             top: 34%;
             right: 9%;
+            width: 24.2rem;
         }
     }
 
@@ -87,12 +98,14 @@
             top: 70%;
             left: 6%;
             z-index: 10;
+            width: 31.3rem;
         }
         .section-elem-2 {
             position: absolute;
             top: 47%;
             left: 0;
             z-index: 10;
+            width: 17.9rem;
         }
     }
 
@@ -111,6 +124,7 @@
             top: 8%;
             right: 2%;
             z-index: 10;
+            width: 63.5rem;
         }
     }
 
@@ -121,12 +135,14 @@
             top: 76%;
             left: 4%;
             z-index: 10;
+            width: 26.7rem;
         }
         .section-elem-2 {
             position: absolute;
             top: 47%;
             left: 0;
             z-index: 10;
+            width: 17.8rem;
         }
     }
 }
@@ -384,6 +400,7 @@
             color: #ffffff;
             font-weight: 700;
             flex: 0 1 4rem;
+            font-size: 2rem;
         }
 
         &__text {
@@ -448,7 +465,7 @@
             color: #ffffff;
             font-family: 'Avanti', sans-serif;
             font-weight: 700;
-            line-height: 1;
+            line-height: 1.4;
             margin-bottom: 2.2rem;
             text-transform: uppercase;
         }
@@ -478,7 +495,7 @@
 
             &__title {
                 font-size: 1.8rem;
-                line-height: 1;
+                line-height: 1.2;
                 margin-bottom: .4rem;
                 text-transform: uppercase;
                 color: #6b2349;
@@ -487,7 +504,7 @@
 
             &__text {
                 font-size: 1.8rem;
-                line-height: 1;
+                line-height: 1.2;
                 color: #373737;
             }
         }
@@ -606,6 +623,10 @@
     &-list {
         &__item {
             margin-bottom: 3.4rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 
@@ -703,3 +724,118 @@
 
     }
 }
+
+
+
+/*instruction------------------------*/
+.instruction {
+    padding-top: 14rem;
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+
+    .c-title {
+        font-size: 6.4rem;
+    }
+
+    &-info {
+        padding: 2.6rem 3rem;
+        background-color: rgba(255,255,255,.6);
+        border-radius: 1rem;
+        margin-bottom: 3rem;
+        position: relative;
+
+        .instruction-text {
+            margin-bottom: 2rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &-elem {
+            position: absolute;
+            right: 0;
+            top: 10%;
+
+            &__1 {
+                position: relative;
+                top: 4rem;
+                left: 15%;
+            }
+            &__2 {
+                position: relative;
+                top: 1rem;
+                left: -1rem;
+            }
+        }
+    }
+
+    &-page {
+        -webkit-background-size: cover;
+        background-size: cover;
+        background: url(../img/bg-page.jpg) 0 0  repeat;
+    }
+
+    &-text {
+        color: #5c5c5c;
+        font-family: 'Myriad Pro', sans-serif;
+        font-weight: 400;
+        margin-bottom: 4rem;
+        line-height: 1.2;
+
+        p {
+            display: inline;
+        }
+
+        b {
+            font-family: 'Myriad Pro Cond', sans-serif;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                &::before {
+                    content: '•';
+                    display: inline-block;
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+
+    &-title {
+        font-family: 'Avanti', sans-serif;
+        color: #373737;
+        display: inline;
+        text-transform: uppercase;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
