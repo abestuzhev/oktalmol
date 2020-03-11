@@ -1988,16 +1988,6 @@ input.c-input--success::placeholder {
   html {
     font-size: 10px; } }
 
-@media (max-device-width: 450px) {
-  .header {
-    background-color: #82e76e; }
-  html {
-    font-size: 8px; }
-  .about-subtitle, .testimony-subtitle {
-    font-size: 3rem;
-    line-height: 1.1;
-    margin-bottom: 2rem; } }
-
 @media (max-width: 730px) {
   .section-3 .c-layout-col:nth-child(1),
   .section-2 .c-layout-col:nth-child(2),
@@ -2016,7 +2006,7 @@ input.c-input--success::placeholder {
   .c-layout {
     padding: 0 7rem 0 3.2rem; }
   .storage-temp span {
-    font-size: 4.6rem; }
+    font-size: 4rem; }
   .storage-temp {
     margin-bottom: 3rem; }
   .storage-advantages-card__title, .storage-advantages-card__text {
@@ -2030,7 +2020,7 @@ input.c-input--success::placeholder {
   .buy-card__price {
     font-size: 3rem; }
   .storage-temp span {
-    font-size: 4.6rem; }
+    font-size: 4rem; }
   .storage-advantages-card {
     position: relative;
     padding: 0 0 0 5rem;
@@ -2104,7 +2094,26 @@ input.c-input--success::placeholder {
   .scheme-card-time__num {
     font-size: 3.6rem; }
   .section-1 {
-    background-position: 61% 50%; } }
+    background-position: 61% 50%; }
+  .storage-temp span {
+    font-size: 3.6rem; } }
+
+@media (max-device-width: 450px) {
+  html {
+    font-size: 8px; }
+  .about-subtitle, .testimony-subtitle {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 2rem; }
+  .scheme-card__num,
+  .scheme-card-time__num {
+    font-size: 3.2rem;
+    line-height: 3.2rem; }
+  .c-layout,
+  .instruction-page .c-layout {
+    padding: 0 2rem 0 2rem; }
+  .buy-list__item {
+    margin-bottom: 1.6rem; } }
 
 @media (max-width: 400px) {
   html {

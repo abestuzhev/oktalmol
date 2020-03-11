@@ -415,20 +415,6 @@
 //     }
 // }
 
-@media (max-device-width: 450px) {
-    .header {
-        background-color: rgb(130, 231, 110);
-    }
-    html {
-        font-size: 8px;
-    }
-
-    .about-subtitle, .testimony-subtitle {
-        font-size: 3rem;
-        line-height: 1.1;
-        margin-bottom: 2rem;
-    }
-}
 
 @media (max-width: 730px) {
 
@@ -460,7 +446,7 @@
     }
 
     .storage-temp span {
-        font-size: 4.6rem;
+        font-size: 4rem;
     }
 
     .storage-temp {
@@ -487,7 +473,7 @@
     }
 
     .storage-temp span {
-        font-size: 4.6rem;
+        font-size: 4rem;
     }
 
     .storage-advantages-card {
@@ -615,6 +601,41 @@
         background-position: 61% 50%;
     }
 
+    .storage-temp span {
+        font-size: 3.6rem;
+    }
+
+}
+
+
+@media (max-device-width: 450px) {
+    .header {
+        // background-color: rgb(130, 231, 110);
+    }
+    html {
+        font-size: 8px;
+    }
+
+    .about-subtitle, .testimony-subtitle {
+        font-size: 3rem;
+        line-height: 1.1;
+        margin-bottom: 2rem;
+    }
+
+    .scheme-card__num,
+    .scheme-card-time__num {
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+    }
+
+    .c-layout,
+    .instruction-page .c-layout {
+        padding: 0 2rem 0 2rem;
+    }
+
+    .buy-list__item {
+        margin-bottom: 1.6rem;
+    }
 }
 
 @media (max-width: 400px) {
