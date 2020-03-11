@@ -1308,7 +1308,7 @@ input.c-input--success::placeholder {
     font-size: 2.5rem; }
   .main-page__scroll {
     position: absolute;
-    bottom: 3rem;
+    top: 76%;
     left: 0;
     font-family: 'Myriad Pro', sans-serif;
     font-size: 1.6rem;
@@ -1696,7 +1696,8 @@ input.c-input--success::placeholder {
   padding-top: 14rem;
   font-size: 1.8rem;
   margin-bottom: 4rem;
-  position: relative; }
+  position: relative;
+  width: 100%; }
   .instruction-page {
     overflow: hidden; }
   .instruction-elem-1 {
@@ -1712,10 +1713,10 @@ input.c-input--success::placeholder {
     top: 56%;
     right: -24%; }
   .instruction .c-title {
-    font-size: 6.4rem; }
+    font-size: 6rem; }
   .instruction-info {
     padding: 2.6rem 3rem;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.3);
     border-radius: 1rem;
     margin-bottom: 3rem;
     position: relative; }
@@ -1738,6 +1739,8 @@ input.c-input--success::placeholder {
   .instruction-page {
     background-size: cover;
     background: url(../img/bg-page.jpg) 0 0 repeat; }
+    .instruction-page .main {
+      display: block; }
   .instruction-text {
     color: #5c5c5c;
     font-family: 'Myriad Pro', sans-serif;
@@ -2093,7 +2096,9 @@ input.c-input--success::placeholder {
   .instruction-info-elem {
     right: 0;
     top: 10%;
-    bottom: auto; } }
+    bottom: auto; }
+  .main-page__scroll {
+    display: none; } }
 
 @media (max-width: 440px) {
   .scheme-card__num,

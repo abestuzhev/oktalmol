@@ -588,6 +588,10 @@
         top: 10%;
         bottom: auto;
     }
+
+    .main-page__scroll {
+        display: none;
+    }
 }
 
 @media (max-width: 440px) {

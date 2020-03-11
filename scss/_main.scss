@@ -273,7 +273,7 @@
 
     &__scroll {
         position: absolute;
-        bottom: 3rem;
+        top: 76%;
         left: 0;
         font-family: 'Myriad Pro', sans-serif;
         font-size: 1.6rem;
@@ -739,6 +739,7 @@
     font-size: 1.8rem;
     margin-bottom: 4rem;
     position: relative;
+    width: 100%;
     
     &-page {
         overflow: hidden;
@@ -761,12 +762,12 @@
     }
 
     .c-title {
-        font-size: 6.4rem;
+        font-size: 6rem;
     }
 
     &-info {
         padding: 2.6rem 3rem;
-        background-color: rgba(255,255,255,.6);
+        background-color: rgba(255,255,255,.3);
         border-radius: 1rem;
         margin-bottom: 3rem;
         position: relative;
@@ -801,6 +802,10 @@
         -webkit-background-size: cover;
         background-size: cover;
         background: url(../img/bg-page.jpg) 0 0  repeat;
+
+        .main {
+            display: block;
+        }
     }
 
     &-text {
