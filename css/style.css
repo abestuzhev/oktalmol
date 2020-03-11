@@ -1115,6 +1115,8 @@ input.c-input--success::placeholder {
           align-items: center;
   max-width: 1100px;
   margin: 0 auto; }
+  .header .c-btn span {
+    white-space: nowrap; }
 
 .sidebar {
   position: fixed;
@@ -1737,6 +1739,7 @@ input.c-input--success::placeholder {
         top: 1rem;
         left: -1rem; }
   .instruction-page {
+    display: block;
     background-size: cover;
     background: url(../img/bg-page.jpg) 0 0 repeat; }
     .instruction-page .main {

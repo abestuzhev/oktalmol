@@ -22,6 +22,12 @@
     align-items: center;
     max-width: 1100px;
     margin: 0 auto;
+
+    .c-btn {
+        span {
+            white-space: nowrap;
+        }
+    }
 }
 
 .sidebar {
@@ -799,6 +805,7 @@
     }
 
     &-page {
+        display: block;
         -webkit-background-size: cover;
         background-size: cover;
         background: url(../img/bg-page.jpg) 0 0  repeat;
