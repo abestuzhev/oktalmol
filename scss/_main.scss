@@ -575,6 +575,8 @@
         &__num {
             color: #373737;
             font-size: 5.5rem;
+            line-height: 4.4rem;
+            white-space: nowrap;
         }
 
         &-icon {
@@ -591,12 +593,14 @@
             align-items: flex-end;
             color: #373737;
             font-family: 'Avanti', sans-serif;
+            white-space: nowrap;
 
             &__num {
                 color: #373737;
                 font-size: 5.5rem;
                 line-height: 4.4rem;
                 margin-right: 1.2rem;
+                white-space: nowrap;
             }
 
             &__body  {
@@ -607,11 +611,13 @@
                 display: block;
                 font-size: 2rem;
                 line-height: 1.8rem;
+                white-space: nowrap;
             }
 
             &__month {
                 display: block;
                 font-size: 3rem;
+                white-space: nowrap;
             }
         }
     }

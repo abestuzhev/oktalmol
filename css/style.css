@@ -143,14 +143,14 @@ div {
 @font-face {
   font-family: 'Avanti';
   src: url("../fonts/Avanti.eot");
-  src: local("Days"), url("../fonts/Avanti.eot?#iefix") format("embedded-opentype"), url("../fonts/Avanti.woff") format("woff"), url("../fonts/Avanti.ttf") format("truetype");
+  src: local("Days"), url("../fonts/Avanti.eot?#iefix") format("embedded-opentype"), url("../fonts/Avanti.woff2") format("woff2"), url("../fonts/Avanti.woff") format("woff"), url("../fonts/Avanti.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'Avanti';
   src: url("../fonts/Avanti-bold.eot");
-  src: local("Days"), url("../fonts/Avanti-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Avanti-bold.woff") format("woff"), url("../fonts/Avanti-bold.ttf") format("truetype");
+  src: local("Days"), url("../fonts/Avanti-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Avanti-bold.woff2") format("woff2"), url("../fonts/Avanti-bold.woff") format("woff"), url("../fonts/Avanti-bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
 
@@ -1576,7 +1576,9 @@ input.c-input--success::placeholder {
       top: .3rem; }
   .scheme-card__num {
     color: #373737;
-    font-size: 5.5rem; }
+    font-size: 5.5rem;
+    line-height: 4.4rem;
+    white-space: nowrap; }
   .scheme-card-icon {
     color: #373737;
     font-family: 'Avanti', sans-serif;
@@ -1597,19 +1599,23 @@ input.c-input--success::placeholder {
         -ms-flex-align: end;
             align-items: flex-end;
     color: #373737;
-    font-family: 'Avanti', sans-serif; }
+    font-family: 'Avanti', sans-serif;
+    white-space: nowrap; }
     .scheme-card-time__num {
       color: #373737;
       font-size: 5.5rem;
       line-height: 4.4rem;
-      margin-right: 1.2rem; }
+      margin-right: 1.2rem;
+      white-space: nowrap; }
     .scheme-card-time__score {
       display: block;
       font-size: 2rem;
-      line-height: 1.8rem; }
+      line-height: 1.8rem;
+      white-space: nowrap; }
     .scheme-card-time__month {
       display: block;
-      font-size: 3rem; }
+      font-size: 3rem;
+      white-space: nowrap; }
 
 /*buy-------------------------*/
 .buy-list__item {
@@ -2107,8 +2113,8 @@ input.c-input--success::placeholder {
     margin-bottom: 2rem; }
   .scheme-card__num,
   .scheme-card-time__num {
-    font-size: 3.8rem;
-    line-height: 3.2rem; }
+    font-size: 4.4rem;
+    line-height: 3.6rem; }
   .scheme-card {
     padding: 2rem 1.4rem; }
   .scheme-card__subtitle {
