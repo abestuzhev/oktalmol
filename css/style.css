@@ -1988,9 +1988,9 @@ input.c-input--success::placeholder {
   html {
     font-size: 10px; } }
 
-@media (max-width: 1080px) and (max-height: 2244px) {
+@media (max-device-width: 450px) {
   .header {
-    background-color: #d0e0ff; }
+    background-color: #e7cb6e; }
   html {
     font-size: 8px; } }
 
