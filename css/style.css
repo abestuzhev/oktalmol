@@ -2110,7 +2110,7 @@ input.c-input--success::placeholder {
     font-size: 3.8rem;
     line-height: 3.2rem; }
   .scheme-card {
-    padding: 2rem; }
+    padding: 2rem 1.4rem; }
   .scheme-card__subtitle {
     margin-bottom: 0.6rem; }
   .buy-list__item {
