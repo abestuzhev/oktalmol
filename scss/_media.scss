@@ -396,13 +396,19 @@
 
 @media (max-width: 769px) and (max-height: 1025px){
     html {
-        font-size: 10px;
+        font-size: 9px;
     }
 }
 
 @media (max-width: 1024px) and (max-height: 768px){
     html {
         font-size: 10px;
+    }
+}
+
+@media (max-width: 1080px) and (max-height: 1920px){
+    html {
+        font-size: 9px;
     }
 }
 
