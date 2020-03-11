@@ -2141,13 +2141,13 @@ input.c-input--success::placeholder {
   .section-6 .c-title {
     font-size: 3.2rem; }
   .buy-card__body {
-    margin-right: .3rem; } }
+    margin-right: .3rem; }
+  .instruction {
+    font-size: 2.6rem; } }
 
 @media (max-width: 400px) {
   html {
-    font-size: 7px; }
-  .instruction {
-    font-size: 2.7rem; } }
+    font-size: 7px; } }
 
 @media (max-width: 380px) {
   .section-3 {
