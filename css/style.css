@@ -2064,7 +2064,9 @@ input.c-input--success::placeholder {
     display: none; }
   .instruction-elem-3 {
     top: 3%;
-    right: -47%; } }
+    right: -47%; }
+  .about-list {
+    margin-bottom: 2rem; } }
 
 @media (max-width: 640px) {
   .c-title {
