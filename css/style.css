@@ -2107,8 +2107,10 @@ input.c-input--success::placeholder {
     margin-bottom: 2rem; }
   .scheme-card__num,
   .scheme-card-time__num {
-    font-size: 3.2rem;
+    font-size: 3.9rem;
     line-height: 3.2rem; }
+  .scheme-card__subtitle {
+    margin-bottom: 0.6rem; }
   .buy-list__item {
     margin-bottom: 1.6rem; }
   .about-card__text {
@@ -2119,7 +2121,7 @@ input.c-input--success::placeholder {
   .storage-advantages-card__text {
     font-size: 2.2rem; }
   .section-5 {
-    padding-top: 12rem; }
+    padding-top: 10rem; }
   .section-6 .c-title {
     font-size: 3.2rem; }
   .buy-card__body {
