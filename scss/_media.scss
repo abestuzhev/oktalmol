@@ -100,6 +100,10 @@
         height: auto;
         margin-bottom: 1.5rem
     }
+
+    .section-1 .section-elem-5 {
+        display: none;
+    }
 }
 
 
@@ -128,6 +132,13 @@
 
     .instruction {
         padding-top: 9rem;
+    }
+
+    .section-1 .section-elem-4 {
+        position: absolute;
+        top: 38%;
+        right: -1%;
+        width: 74.2rem;
     }
 }
 

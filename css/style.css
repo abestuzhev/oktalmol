@@ -554,8 +554,7 @@ input.c-input--success::placeholder {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  max-width: 260px; }
+          align-items: center; }
   .c-btn svg {
     margin-right: 13px; }
   .c-btn:hover {
@@ -1129,7 +1128,8 @@ input.c-input--success::placeholder {
 
 .main {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  position: relative; }
 
 .main * {
   -webkit-box-sizing: border-box;
@@ -1142,8 +1142,9 @@ input.c-input--success::placeholder {
   background-position: 50% 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: relative; }
-  .section-elem-1 img, .section-elem-2 img, .section-elem-3 img {
+  position: relative;
+  overflow: hidden; }
+  .section-elem-1 img, .section-elem-2 img, .section-elem-3 img, .section-elem-4 img, .section-elem-5 img, .section-elem-6 img, .section-elem-7 img, .section-elem-8 img {
     width: 100%; }
   .section-1 .section-elem-1 {
     position: absolute;
@@ -1161,10 +1162,35 @@ input.c-input--success::placeholder {
     top: 34%;
     right: 9%;
     width: 24.2rem; }
+  .section-1 .section-elem-4 {
+    position: absolute;
+    top: 31%;
+    right: 9%;
+    width: 92.2rem; }
+  .section-1 .section-elem-5 {
+    position: absolute;
+    top: 34%;
+    left: -3%;
+    width: 29.4rem; }
+  .section-1 .section-elem-6 {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 183.9rem; }
   .section-2 .c-layout-col:nth-child(1) {
     width: 40%; }
   .section-2 .c-layout-col:nth-child(2) {
     width: 60%; }
+  .section-2 .section-elem-1 {
+    position: absolute;
+    top: 70%;
+    right: 2%;
+    width: 36rem; }
+  .section-2 .section-elem-2 {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 147.7rem; }
   .section-3 .section-elem-1 {
     position: absolute;
     top: 70%;
@@ -1177,6 +1203,14 @@ input.c-input--success::placeholder {
     left: 0;
     z-index: 10;
     width: 17.9rem; }
+  .section-3 .section-elem-3 {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    z-index: 10;
+    width: 185.8rem; }
+  .section-3 .c-layout-col:nth-child(1) {
+    width: 43%; }
   .section-4 .c-layout-col:nth-child(1) {
     width: 30%; }
   .section-4 .c-layout-col:nth-child(2) {
@@ -1187,6 +1221,18 @@ input.c-input--success::placeholder {
     right: 2%;
     z-index: 10;
     width: 63.5rem; }
+  .section-4 .section-elem-2 {
+    position: absolute;
+    bottom: 4%;
+    left: 20%;
+    z-index: 10;
+    width: 53.9rem; }
+  .section-4 .section-elem-3 {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    z-index: 10;
+    width: 140.5rem; }
   .section-5 .section-elem-1 {
     position: absolute;
     top: 76%;
@@ -1199,10 +1245,88 @@ input.c-input--success::placeholder {
     left: 0;
     z-index: 10;
     width: 17.8rem; }
+  .section-5 .section-elem-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 185.8rem; }
+  .section .a-turn-1,
+  .section .a-turn-2,
+  .section .a-turn-3,
+  .section .a-turn-4,
+  .section .a-turn-5,
+  .section .a-turn-6,
+  .section .a-turn-7,
+  .section .a-turn-8,
+  .section .a-turn-9 {
+    opacity: 0; }
+  .section.active {
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out; }
+    .section.active .a-turn-1 {
+      -webkit-animation: .4s fadeInUp .5s forwards;
+              animation: .4s fadeInUp .5s forwards; }
+    .section.active .a-turn-2 {
+      -webkit-animation: .5s fadeInUp .7s forwards;
+              animation: .5s fadeInUp .7s forwards; }
+    .section.active .a-turn-3 {
+      -webkit-animation: .5s fadeInUp .8s forwards;
+              animation: .5s fadeInUp .8s forwards; }
+    .section.active .a-turn-4 {
+      -webkit-animation: .55s fadeInUp .85s forwards;
+              animation: .55s fadeInUp .85s forwards; }
+    .section.active .a-turn-5 {
+      -webkit-animation: .57s fadeInUp .9s forwards;
+              animation: .57s fadeInUp .9s forwards; }
+    .section.active .a-turn-6 {
+      -webkit-animation: .59s fadeInUp .95s forwards;
+              animation: .59s fadeInUp .95s forwards; }
+
+@-webkit-keyframes fadeInUpOp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+            transform: translate3d(0, 50px, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@keyframes fadeInUpOp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+            transform: translate3d(0, 50px, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+            transform: translate3d(0, 50px, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+            transform: translate3d(0, 50px, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
 
 /*----------------------------*/
 #fp-nav {
-  padding-top: 15%;
+  padding-top: 10%;
   width: 14.1rem;
   height: 84%;
   display: -webkit-box;
@@ -1411,9 +1535,10 @@ input.c-input--success::placeholder {
 
 .testimony-subtitle {
   font-size: 2.2rem;
+  line-height: 1.1;
   color: #ffffff;
   font-family: 'Myriad Pro Cond', sans-serif;
-  margin-bottom: 5.6rem; }
+  margin-bottom: 6rem; }
 
 .testimony-list {
   margin-bottom: 4rem; }
@@ -1585,6 +1710,7 @@ input.c-input--success::placeholder {
     color: #373737;
     font-family: 'Avanti', sans-serif;
     font-size: 3rem;
+    line-height: 1.7;
     padding: 0 .9rem; }
   .scheme-card-time {
     display: -webkit-box;
@@ -1607,7 +1733,7 @@ input.c-input--success::placeholder {
       color: #373737;
       font-size: 5.5rem;
       line-height: 4.4rem;
-      margin-right: 1.2rem;
+      margin-right: .8rem;
       white-space: nowrap; }
     .scheme-card-time__score {
       display: block;
@@ -1766,6 +1892,18 @@ input.c-input--success::placeholder {
     color: #373737;
     display: inline;
     text-transform: uppercase; }
+  .instruction-elem-4 {
+    position: absolute;
+    top: 0%;
+    left: 3%; }
+  .instruction-elem-5 {
+    position: absolute;
+    top: 0%;
+    right: 0%; }
+  .instruction-elem-6 {
+    position: absolute;
+    bottom: 0%;
+    left: 0%; }
 
 @media (max-width: 1600px) {
   .section-4 .section-elem-1 {
@@ -1836,7 +1974,9 @@ input.c-input--success::placeholder {
             transform: none; }
   #fp-nav ul li {
     height: auto;
-    margin-bottom: 1.5rem; } }
+    margin-bottom: 1.5rem; }
+  .section-1 .section-elem-5 {
+    display: none; } }
 
 @media (max-width: 1300px) {
   .section-1 .section-elem-2 {
