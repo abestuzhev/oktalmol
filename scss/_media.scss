@@ -29,6 +29,7 @@
     }
 
 }
+
 @media (max-width: 1450px){
     .sidebar,
     .c-hamburger {
@@ -101,7 +102,8 @@
         margin-bottom: 1.5rem
     }
 
-    .section-1 .section-elem-5 {
+    .section-1 .section-elem-5,
+    .section-2 .section-elem-1 {
         display: none;
     }
 }
@@ -136,9 +138,13 @@
 
     .section-1 .section-elem-4 {
         position: absolute;
-        top: 38%;
-        right: -1%;
-        width: 74.2rem;
+        top: 47%;
+        right: 0%;
+        width: 54.2rem;
+    }
+
+    .section-1 .section-elem-1 {
+        left: -4%;
     }
 }
 
@@ -212,6 +218,10 @@
         padding: 0 9rem 0 3.2rem;
     }
 
+    .c-title {
+        font-size: 4.3rem;
+    }
+
 
 
     .instruction-page .c-layout {
@@ -237,14 +247,13 @@
     }
 
     .main-page .c-title {
-        //font-size: 45px;
-    }
-    .c-title {
-        //font-size: 38px;
-    }
-    .main-page .c-title {
         color: #ffffff;
-        font-size: 5.5rem;
+        font-size: 5rem;
+    }
+
+
+    .storage-temp span {
+        font-size: 5.2rem;
     }
 
     .section-2  {
@@ -341,7 +350,17 @@
     }
 }
 
-@media (max-width: 1024px) and (max-height: 1366px){
+@media (max-device-width: 1030px) {
+    
+    .section-4 .section-elem-2 {
+        left: 3%;
+    }
+
+    .section-4{
+        background-position: 32% 50%;
+    }
+}
+@media (max-device-width: 1024px) and (max-device-height: 1366px){
 
     html {
         font-size: 13px;
@@ -402,16 +421,23 @@
         font-size: 1.8rem;
         line-height: 1.2;
     }
+
+    .section-1 .section-elem-4 {
+        top: 40%;
+        right: -19%;
+        width: 87.2rem;
+    }
+
 }
 
 
-@media (max-width: 769px) and (max-height: 1025px){
+@media (max-device-width: 769px) and (max-device-height: 1025px){
     html {
         font-size: 9px;
     }
 }
 
-@media (max-width: 1024px) and (max-height: 768px){
+@media (max-device-width: 1024px) and (max-device-height: 768px){
     html {
         font-size: 10px;
     }
@@ -427,7 +453,7 @@
 // }
 
 
-@media (max-width: 730px) {
+@media (max-device-width: 730px) {
 
 
     .section-3 .c-layout-col:nth-child(1),
@@ -552,7 +578,7 @@
     }
 }
 
-@media (max-width: 640px) {
+@media (max-device-width: 640px) {
     .c-title {
         font-size: 3.6rem;
         line-height: 1.1;
@@ -603,24 +629,20 @@
     .main-page__scroll {
         display: none;
     }
+
+    .section-1 .section-elem-4 {
+        position: absolute;
+        top: auto;
+        bottom: 7%;
+        right: -27%;
+        width: 69.2rem;
+    }
+
+    .section-4 .section-elem-2 {
+        left: -44%;
+    }
 }
 
-@media (max-width: 440px) {
-
-    .scheme-card__num,
-    .scheme-card-time__num {
-        font-size: 3.6rem;
-    }
-
-    .section-1 {
-        background-position: 61% 50%;
-    }
-
-    .storage-temp span {
-        font-size: 3.6rem;
-    }
-
-}
 
 
 @media (max-device-width: 450px) {
@@ -678,10 +700,6 @@
         padding-top: 10rem;
     }
 
-    .section-6 .c-title {
-        font-size: 3.2rem;  
-    }
-
     .buy-card__body {
         margin-right: .3rem;
     }
@@ -690,9 +708,41 @@
     .instruction {
         font-size: 2.6rem;
     }
+
+    .section-4 {
+        background-position: 42% 50%;
+    }
+
+    .section-1 .section-elem-4 {
+        right: -19%;
+        width: 61.2rem;
+    }
+
+    .section-1 .section-elem-6 {
+        top: 12%;
+        left: -182%;
+    }
 }
 
-@media (max-width: 400px) {
+
+@media (max-device-width: 440px) {
+
+    .scheme-card__num,
+    .scheme-card-time__num {
+        font-size: 3.6rem;
+    }
+
+    .section-1 {
+        background-position: 61% 50%;
+    }
+
+    .storage-temp span {
+        font-size: 3.6rem;
+    }
+
+}
+
+@media (max-device-width: 400px) {
     html {
         font-size: 7px;
     }
@@ -707,7 +757,7 @@
 }
 
 
-@media (max-width: 380px) {
+@media (max-device-width: 380px) {
 
     .about-subtitle,
     .testimony-subtitle {
@@ -728,8 +778,8 @@
 }
 
 
-@media (max-width: 340px) {
+@media (max-device-width: 340px) {
     html {
-        font-size: 6px;
+        font-size: 6.4px;
     }
 }
